@@ -1,0 +1,32 @@
+body{
+    height: 100vh;
+
+}
+
+.navbar{
+    height: 80px;
+    background-color: slategray;
+}
+div h1{
+    color: darkgray;
+}
+.subCont{
+    margin: 20px 0px 20px 0px;
+}
+
+
+.labels{
+    font-weight: 300;
+    margin-right: 10px;
+}
+
+.foods{
+ padding: 0px;
+ margin: 0px;
+
+}
+
+td{
+    text-transform: capitalize ;
+
+}

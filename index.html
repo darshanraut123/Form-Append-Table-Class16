@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css"></link>
+    <!-- Boostrap 4 CSS -->
+        <!-- Boostrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row navbar">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-9"><h1>BIODATA INFORMATION</h1></div>
+            <div class="col-sm-2"></div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row pt-3">
+            <div class="col-sm-2"></div>
+            <form class="col-sm-8" autocomplete="off">
+                <div class="form-group">
+                    <div class="subCont">
+                        <label for="fname" >First Name :</label>
+                        <input type="text" id="fname" class="form-control rounded" required>
+                    </div>
+                    <div class="subCont">
+                        <label for="lname" >Last Name :</label>
+                        <input type="text" id="lname" class="form-control rounded" required>
+                    </div>
+                    <div class="subCont">
+                        <label for="gender">Gender :</label>
+                        <select class="form-control rounded dpdn" id="gender">
+                            <option value="default">Default</option>
+                            <option value="male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="subCont">
+                        <label for="address">Address :</label>
+                        <textarea class="form-control rounded" id="address" rows="3"></textarea>
+                    </div>
+                    <div class="subCont">
+                        <label for="pin">Pin Code :</label>
+                        <input type="number" id="pin" class="form-control rounded" maxlength="10" required>
+                    </div>
+                    <div class="container" style="padding: 0px; margin:0px">
+                        <div class="row">
+                            <h6 class="col-12">Foods :</h6>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <label for="Mexican" class="labels">Mexican</label>
+                                <input type="checkbox" name="foods" id="Mexican">
+                            </div>
+                            <div class="col-sm-2">
+                                <label for="Indian" class="labels">Indian</label>
+                                <input type="checkbox" id="Indian" name="foods">
+                            </div>
+                            <div class="col-sm-2">
+                                <label for="Italian" class="labels">Italian</label>
+                                <input type="checkbox" id="Italian" name="foods">
+                            </div>
+                            <div class="col-sm-2">
+                                <label for="Chinese" class="labels">Chinese</label>
+                                <input type="checkbox" id="Chinese" name="foods">
+                            </div>
+                            <div class="col-sm-2">
+                                <label for="Japanese" class="labels">Japanese</label>
+                                <input type="checkbox" id="Japanese" name="foods">
+                            </div>
+                            <div class="col-sm-2">
+                                <label for="Europian" class="labels">Europian</label>
+                                <input type="checkbox" id="Europian" name="foods">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subCont">
+                        <label for="">State :</label>
+                        <input type="text" id="state" class="form-control rounded">
+                    </div>
+                    <div class="subCont">
+                        <label for="">Country :</label>
+                        <input type="text" id="country" class="form-control rounded">
+                    </div>
+                </div>
+                <input type="submit" value="Submit" class="mt-3 btn btn-info w-100">
+            </form>
+            <div class="col-sm-2"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mt-5">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">Sr.No</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Gender</th>
+                        <th scope="col">Address</th>
+                        <th scope="col">Pin code</th>
+                        <th scope="col">Food</th>
+                        <th scope="col">State</th>
+                        <th scope="col">Country</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
