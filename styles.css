@@ -1,10 +1,10 @@
 body{
-    height: 100vh;
+    min-height: 100vh;
 
 }
 
 .navbar{
-    height: 80px;
+    min-height: 80px;
     background-color: slategray;
 }
 div h1{
@@ -29,4 +29,8 @@ div h1{
 td{
     text-transform: capitalize ;
 
+}
+
+.table{
+    overflow-x:auto;
 }
